@@ -1,6 +1,29 @@
 # ippsec-ansible-pwnbox-latest
+
+
 Updated ippsec-pwnbox ansible for the latest version
-( fixed that error: ERROR! [DEPRECATED]: ansible.builtin.include has been removed. Use include_tasks or import_tasks instead. This feature was removed from ansible-core in a release after 2023-05-16. Please update your playbooks.=
+
+
+fixed errors: 
+
+=> Ansible Updated error:
+
+ERROR! [DEPRECATED]: ansible.builtin.include has been removed. Use include_tasks or import_tasks instead. This feature was removed from ansible-core in a release after 2023-05-16. Please update your playbooks.
+
+=> Path Could Not found of burpsuite jar error:
+
+Executing bash script to Download CA Certificate 
+
+=> rsyslog not installed error
+
+=> ens33 not found error on terminal, changed to enp0s3 on .bashrc, if your interface name is different you have to change enp0s3 string to your interface name, to see it use ifconfig.
+
+
+
+
+
+
+SETUP:
 
 1- Download the Hackthebox parrot version -> https://deb.parrot.sh/parrot/iso/6.0/Parrot-htb-6.0_amd64.iso
 
@@ -27,6 +50,8 @@ $pip3 install ansible --break-system-packages
 $ansible-galaxy install -r requirements.yml
 
 $ansible-playbook main.yml
+
+(in the burpsuite part, it will pop-up screen because its your first burpsuite opening, open burpsuite with default settings, I designed it that way because if some java version change, this ansible still will be usable)
 
 then open a new terminal > right click > profiles > video
 
