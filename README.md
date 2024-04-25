@@ -53,6 +53,6 @@ $ansible-playbook main.yml
 
 (in the burpsuite part, it will pop-up screen because its your first burpsuite opening, open burpsuite with default settings, I designed it that way because if some java version change, this ansible still will be usable)
 
-then open a new terminal > right click > profiles > video
+then open a new terminal > edit > profiles > Profile used when launching a new terminal video, also click on video and tick "Use the system fixed width font" if you don't want that big font.
 
 reboot your system, your system is ready to pwn HTB boxes on ippsec's environment.
