@@ -43,7 +43,7 @@ $sudo apt update && sudo apt full-upgrade
 
 $git clone https://github.com/zer0dac/ippsec-ansible-pwnbox-latest.git
 
-$cd ippsec-ansible-pwnbox-latest
+$cd ippsec-ansible-pwnbox-latest/parrot-build
 
 $pip3 install ansible --break-system-packages
 
