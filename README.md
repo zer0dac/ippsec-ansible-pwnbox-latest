@@ -17,10 +17,15 @@ scroll down to the page and add this line bottom of the file
 5- Run below commands:
 
 $sudo apt update && sudo apt full-upgrade
+
 $git clone https://github.com/zer0dac/ippsec-ansible-pwnbox-latest.git
+
 $cd ippsec-ansible-pwnbox-latest
+
 $pip3 install ansible --break-system-packages
+
 $ansible-galaxy install -r requirements.yml
+
 $ansible-playbook main.yml
 
 then open a new terminal > right click > profiles > video
